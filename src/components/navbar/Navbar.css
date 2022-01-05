@@ -12,6 +12,12 @@
 .navbar-logo {
 	height: 80px;
 	line-height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-logo > h1 {
 	color: white;
 	cursor: pointer;
 }
@@ -19,4 +25,17 @@
 .scrolling {
 	background-color: black;
 	transition: all 0.5s ease;
+}
+
+.language-container {
+	margin: auto 20px;
+	margin-bottom: 30px;
+}
+
+.language-button {
+	padding: 8px;
+	margin: auto 20px 20px 0;
+	font-weight: bold;
+	border: none;
+	border-radius: 8px;
 }

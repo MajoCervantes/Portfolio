@@ -6,11 +6,11 @@ import "./Slider.css";
 //Components
 import Slides from './Slides';
 
-const Slider = () => {
+const Slider = ({ lang }) => {
     return (
         <div className='carousel-container'>
             <div className='carousel-title'>
-                <h2>Mis Proyectos</h2>
+                <h2> {`${lang ? "Mis Proyectos" : "My Projects"}`} </h2>
             </div>
             <Carousel plugins={[ 'arrows' ]}
                 arrows

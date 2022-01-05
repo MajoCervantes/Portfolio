@@ -11,6 +11,15 @@ import Footer from './components/footer/Footer';
 
 function App() {
   const [ scrollHeight, setScrollHeight ] = useState(0);
+  const [ lang, setLang ] = useState(false);
+
+  const changeLanguage = () => {
+    if (lang) {
+      setLang(false);
+    } else {
+      setLang(true);
+    }
+  };
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -23,12 +32,12 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar isScrolling={scrollHeight} />
-      <Cover />
-      <About />
-      <Slider />
-      <Info />
-      <Footer />
+      <Navbar isScrolling={scrollHeight} changeLanguage={changeLanguage} lang={lang} setLang={setLang} />
+      <Cover lang={lang} />
+      <About lang={lang} />
+      <Slider lang={lang} />
+      <Info lang={lang} />
+      <Footer lang={lang} />
     </div>
   );
 }
