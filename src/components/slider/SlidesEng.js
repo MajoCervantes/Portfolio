@@ -14,32 +14,32 @@ const slidesInfo = [
     {
         src: Countries,
         alt: 'Countries info app',
-        desc: 'Aplicación que da información acerca de cada país y clima en tiempo real, creada con React y consumo de API'
+        desc: 'App that provides information about each country and weather in real time, created with React and API'
     },
     {
         src: eCommerce,
-        alt: 'Tienda en línea',
-        desc: 'Tienda en línea de artículos variados, creada con React, Redux y consumo de API'
+        alt: 'E Commerce',
+        desc: 'Online store, built with React, Redux, and API'
 
     },
     {
         src: Github,
-        alt: 'Aplicación de usuarios de github',
-        desc: 'Aplicación para buscar usuarios de github y su información, creada con React'
+        alt: 'Guthub users app',
+        des: 'App to find github users and their information, created with React'
     },
     {
         src: ToDo,
-        alt: 'Lista de tareas',
-        desc: 'Aplicación de lista de tareas por hacer, creada con React'
+        alt: 'To do list',
+        desc: 'To Do List App, creater  with React'
     },
     {
         src: Trivia,
-        alt: 'Juego de Trivia',
-        desc: 'Juego de trivia, creado con React y consumo de API'
+        alt: 'Quiz Game',
+        desc: 'Quiz Game, created with React and API'
     }
 ];
 
-const slides = slidesInfo.map((slide, idx) => (
+const slidesEng = slidesInfo.map((slide, idx) => (
     <div key={idx} className="slide-container">
         <img src={slide.src} alt={slide.alt} />
         <div className="slide-desc">
@@ -48,4 +48,4 @@ const slides = slidesInfo.map((slide, idx) => (
     </div>
 ));
 
-export default slides;
+export default slidesEng;

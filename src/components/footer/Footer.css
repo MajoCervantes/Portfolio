@@ -104,6 +104,11 @@
 		text-align: center;
 	}
 
+	.footer-phone,
+	.footer-mail {
+		margin-left: 120px;
+	}
+
 	.footer-sns {
 		grid-template-columns: 1fr;
 		text-align: center;

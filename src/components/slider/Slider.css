@@ -69,7 +69,7 @@
 	border-color: black !important;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 900px) {
 	.carousel-container {
 		flex-direction: column;
 	}
@@ -82,5 +82,12 @@
 
 	.slide-container {
 		width: 100%;
+	}
+	.slide-desc > span {
+		color: white;
+		/* display: block; */
+		font-size: 19px;
+		padding: 20px 0 20px 10px;
+		text-align: left;
 	}
 }
