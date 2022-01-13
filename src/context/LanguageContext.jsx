@@ -10,8 +10,10 @@ const LanguageProvider = ({ children }) => {
 
 	const handleLanguage = () => setLang(!lang)
 
+	const data = { lang, handleLanguage }
+
 	return (
-		<LanguageContext.Provider value={value}>
+		<LanguageContext.Provider value={data}>
 			{children}
 		</LanguageContext.Provider>
 	)
