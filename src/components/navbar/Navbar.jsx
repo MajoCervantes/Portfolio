@@ -3,6 +3,7 @@ import React, {
 	useState,
 	useEffect,
 } from "react"
+import { motion } from "framer-motion"
 
 //Context
 import LanguageContext from "../../context/LanguageContext"
@@ -63,7 +64,17 @@ const Navbar = () => {
 	}
 
 	return (
-		<nav
+		<motion.nav
+			initial={{ x: "-1050px", opacity: 0 }}
+			animate={{
+				x: 0,
+				opacity: 1,
+				transition: {
+					delay: 0.5,
+					duration: 2,
+					ease: "easeIn",
+				},
+			}}
 			className={`navbar ${
 				scrollHeight > 500 ? "scrolling" : null
 			}`}>
@@ -91,7 +102,7 @@ const Navbar = () => {
 					!lang ? "ESP" : "ENG"
 				}`}</button>
 			</div>
-		</nav>
+		</motion.nav>
 	)
 }
 

@@ -19,8 +19,6 @@ import "./Slider.css"
 const Slider = () => {
 	const { lang } = useContext(LanguageContext)
 
-	const carouselImgs = lang ? Slides : SlidesEng
-
 	return (
 		<>
 			<div className='carousel-container'>
@@ -36,7 +34,7 @@ const Slider = () => {
 						"centered",
 						"infinite",
 						"arrows",
-						"fastSwipe",
+
 						{
 							resolve: slidesToShowPlugin,
 							options: {
@@ -46,7 +44,7 @@ const Slider = () => {
 					]}
 					offset={30}
 					itemWidth={350}
-					slides={carouselImgs}
+					slides={lang ? Slides : SlidesEng}
 					breakpoints={{
 						640: {
 							plugins: [
@@ -60,19 +58,6 @@ const Slider = () => {
 								},
 							],
 							itemWidth: 230,
-						},
-						900: {
-							plugins: [
-								"centered",
-								"infinite",
-								"arrows",
-								{
-									resolve: slidesToShowPlugin,
-									options: {
-										numberOfSlides: 2,
-									},
-								},
-							],
 						},
 					}}
 				/>

@@ -1,4 +1,5 @@
 import React, { useContext } from "react"
+import { motion } from "framer-motion"
 
 //Context
 import LanguageContext from "../../context/LanguageContext"
@@ -12,8 +13,7 @@ import coverVideoSmaill from "../../media/video-s.mp4"
 
 const Cover = () => {
 	const { lang } = useContext(LanguageContext)
-
-	return lang ? (
+	return (
 		<div className='cover-container'>
 			<video
 				className='video'
@@ -23,25 +23,37 @@ const Cover = () => {
 				muted
 			/>
 
-			<h1>Majo Cervantes</h1>
-			<p>
-				Desarrolladora | Diseñadora | Creadora De
-				Contenido
-			</p>
-		</div>
-	) : (
-		<div className='cover-container'>
-			<video
-				className='video'
-				src={videoCover}
-				autoPlay
-				loop
-				muted
-			/>
-			<h1>Majo Cervantes</h1>
-			<p>
-				Web Developer | Designer | Content Creator
-			</p>
+			<motion.h1
+				initial={{ x: "-1050px" }}
+				animate={{
+					x: "0",
+					transition: {
+						delay: 0.5,
+						duration: 2,
+						ease: "easeIn",
+					},
+				}}>
+				Majo Cervantes
+			</motion.h1>
+			<motion.div
+				className='dev-container'
+				initial={{ x: "1050px" }}
+				animate={{
+					x: "0",
+					transition: {
+						delay: 0.5,
+						duration: 2,
+						ease: "easeIn",
+					},
+				}}>
+				<p>
+					{`${
+						lang
+							? "Desarrolladora | Diseñadora | CreadoraDe Contenido"
+							: "Web Developer | Deigner | Content Creator"
+					}`}
+				</p>
+			</motion.div>
 		</div>
 	)
 }
