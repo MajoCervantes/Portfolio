@@ -21,7 +21,7 @@ const Footer = () => {
 			</div>
 			<div className='footer-contact'>
 				<h3>Contáctame</h3>
-				<p>Y Pongámos Manos A La Obra</p>
+				<p>Y pongámos manos a la obra</p>
 				<div className='footer-mail'>
 					<i className='fab fa-solid fa-envelope'></i>
 					<p>champiis49@gmail.com</p>

@@ -37,11 +37,6 @@
 .footer-contact p {
 	margin-bottom: 20px;
 }
-.footer-mail,
-.footer-phone {
-	display: flex;
-	padding: 5px;
-}
 
 .fa-phone,
 .fa-envelope {
@@ -102,11 +97,6 @@
 		font-size: 16px;
 		padding: 100px 0 30px 0;
 		text-align: center;
-	}
-
-	.footer-phone,
-	.footer-mail {
-		margin-left: 120px;
 	}
 
 	.footer-sns {

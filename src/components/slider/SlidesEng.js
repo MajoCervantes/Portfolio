@@ -25,7 +25,7 @@ const slidesInfo = [
     {
         src: Github,
         alt: 'Guthub users app',
-        des: 'App to find github users and their information, created with React'
+        desc: 'App to find github users and their information, created with React'
     },
     {
         src: ToDo,

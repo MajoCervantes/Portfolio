@@ -38,7 +38,7 @@ const Cover = () => {
 			/>
 			<h1>Majo Cervantes</h1>
 			<p>
-				Web Developer | Designer |Content Creator
+				Web Developer | Designer | Content Creator
 			</p>
 		</div>
 	)

@@ -35,14 +35,13 @@ const About = () => {
 					detallista.
 				</p>
 				<div className='CV-container'>
-					<i className='fa-solid fa-cloud-arrow-down'>
-						<a
-							href={CV}
-							target='_blank'
-							rel='noreferrer'>
-							Descargar CV
-						</a>
-					</i>
+					<a
+						href={CV}
+						target='_blank'
+						rel='noreferrer'>
+						<i className='fa-solid fa-cloud-arrow-down'></i>
+						Descargar CV
+					</a>
 				</div>
 			</div>
 			<div className='about-img'>
@@ -69,14 +68,13 @@ const About = () => {
 					attention to detail.
 				</p>
 				<div className='CV-container'>
-					<i className='fa-solid fa-cloud-arrow-down'>
-						<a
-							href={CVeng}
-							target='_blank'
-							rel='noreferrer'>
-							Download CV
-						</a>
-					</i>
+					<a
+						href={CVeng}
+						target='_blank'
+						rel='noreferrer'>
+						<i className='fa-solid fa-cloud-arrow-down'></i>
+						Download CV
+					</a>
 				</div>
 			</div>
 			<div className='about-img'>

@@ -31,10 +31,12 @@ const Slider = () => {
 				</div>
 
 				<Carousel
+					className='carousel'
 					plugins={[
 						"centered",
 						"infinite",
 						"arrows",
+						"fastSwipe",
 						{
 							resolve: slidesToShowPlugin,
 							options: {
@@ -48,19 +50,22 @@ const Slider = () => {
 					breakpoints={{
 						640: {
 							plugins: [
-								"arrows",
 								"centered",
 								"infinite",
 								{
 									resolve: slidesToShowPlugin,
 									options: {
-										numberOfSlides: 1,
+										numberOfSlides: 1.1,
 									},
 								},
 							],
+							itemWidth: 230,
 						},
 						900: {
 							plugins: [
+								"centered",
+								"infinite",
+								"arrows",
 								{
 									resolve: slidesToShowPlugin,
 									options: {

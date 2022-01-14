@@ -85,6 +85,11 @@ const Navbar = () => {
 						!lang ? "ESP" : "ENG"
 					}`}</button>
 				</div>
+				<button
+					className='language-button'
+					onClick={handleLanguage}>{`${
+					!lang ? "ESP" : "ENG"
+				}`}</button>
 			</div>
 		</nav>
 	)
