@@ -22,13 +22,7 @@ const Cover = () => {
 				loop
 				muted
 			/>
-			<video
-				className='video-s'
-				src={coverVideoSmaill}
-				autoPlay
-				loop
-				muted
-			/>
+
 			<h1>Majo Cervantes</h1>
 			<p>
 				Desarrolladora | Diseñadora | Creadora De

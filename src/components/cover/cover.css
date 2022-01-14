@@ -18,10 +18,6 @@
 	z-index: -1;
 }
 
-.video-s {
-	display: none;
-}
-
 .cover-container > h1 {
 	color: white;
 	font-size: 100px;
@@ -43,20 +39,5 @@
 		text-align: center;
 		font-size: 22px;
 		width: 85%;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.video {
-		display: none;
-	}
-
-	.video-s {
-		display: initial;
-		object-fit: cover;
-		width: 100%;
-		height: 100vh;
-		position: absolute;
-		z-index: -1;
 	}
 }
