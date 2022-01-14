@@ -1,4 +1,6 @@
-import React, { useContext } from "react"
+import React from "react"
+
+import { useContext } from "react"
 
 //Context
 import LanguageContext from "../../context/LanguageContext"
@@ -11,7 +13,6 @@ import "@brainhubeu/react-carousel/lib/style.css"
 
 //Components
 import Slides from "./Slides"
-import SlidesEng from "./SlidesEng"
 
 //Styles
 import "./Slider.css"
@@ -44,7 +45,7 @@ const Slider = () => {
 					]}
 					offset={30}
 					itemWidth={350}
-					slides={lang ? Slides : SlidesEng}
+					slides={Slides}
 					breakpoints={{
 						640: {
 							plugins: [

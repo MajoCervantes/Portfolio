@@ -14,28 +14,27 @@ const slidesInfo = [
     {
         src: Countries,
         alt: 'Countries info app',
-        desc: 'Aplicación que da información acerca de cada país y clima en tiempo real, creada con React y consumo de API'
+        desc: 'Coutries Weather App'
     },
     {
         src: eCommerce,
         alt: 'Tienda en línea',
-        desc: 'Tienda en línea de artículos variados, creada con React, Redux y consumo de API'
-
+        desc: 'E Commerce'
     },
     {
         src: Github,
         alt: 'Aplicación de usuarios de github',
-        desc: 'Aplicación para buscar usuarios de github y su información, creada con React'
+        desc: 'Github Users'
     },
     {
         src: ToDo,
         alt: 'Lista de tareas',
-        desc: 'Aplicación de lista de tareas por hacer, creada con React'
+        desc: 'To Do List'
     },
     {
         src: Trivia,
         alt: 'Juego de Trivia',
-        desc: 'Juego de trivia, creado con React y consumo de API'
+        desc: 'Quiz Game'
     }
 ];
 
