@@ -8,6 +8,7 @@ import "./cover.css"
 
 //Media
 import videoCover from "../../media/videoCover.mp4"
+import coverVideoSmaill from "../../media/video-s.mp4"
 
 const Cover = () => {
 	const { lang } = useContext(LanguageContext)
@@ -17,6 +18,13 @@ const Cover = () => {
 			<video
 				className='video'
 				src={videoCover}
+				autoPlay
+				loop
+				muted
+			/>
+			<video
+				className='video-s'
+				src={coverVideoSmaill}
 				autoPlay
 				loop
 				muted
