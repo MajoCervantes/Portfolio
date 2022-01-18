@@ -1,12 +1,5 @@
-import React, {
-	useContext,
-	useEffect,
-} from "react"
-import {
-	motion,
-	useAnimation,
-} from "framer-motion"
-import { useInView } from "react-intersection-observer"
+import React, { useContext } from "react"
+import { motion } from "framer-motion"
 
 //Styles
 import "./About.css"
@@ -25,56 +18,9 @@ import CVeng from "../../documents/CV-Majo-Cervantes-ENG.pdf"
 const About = () => {
 	const { lang } = useContext(LanguageContext)
 
-	const { ref, inView } = useInView()
-	const animation = useAnimation()
-	const imgAnimation = useAnimation()
-
-	useEffect(() => {
-		console.log(inView)
-		if (inView) {
-			animation.start({
-				x: 0,
-				transition: {
-					type: "spring",
-					duration: 2,
-					bounce: 0.1,
-				},
-			})
-		}
-		if (!inView) {
-			animation.start({
-				x: "-100vw",
-			})
-		}
-	}, [inView])
-
-	useEffect(() => {
-		if (inView) {
-			imgAnimation.start({
-				opacity: 1,
-				x: 0,
-				transition: {
-					type: "spring",
-					duration: 2.5,
-					bounce: 0.1,
-					ease: "easeIn",
-				},
-			})
-		}
-		if (!inView) {
-			imgAnimation.start({
-				opacity: 0,
-				x: "500px",
-			})
-		}
-	}, [inView])
-
 	return (
 		<div className='about-container'>
-			<motion.div
-				ref={ref}
-				className='about-desc'
-				animate={animation}>
+			<div className='about-desc'>
 				<h3>{`${
 					lang
 						? "Déjame contarte acerca de mi"
@@ -112,14 +58,9 @@ const About = () => {
 						} `}
 					</a>
 				</div>
-			</motion.div>
+			</div>
 			<div className='about-img'>
-				<motion.img
-					ref={ref}
-					src={majo}
-					alt='Majo'
-					animate={imgAnimation}
-				/>
+				<img src={majo} alt='Majo' />
 			</div>
 		</div>
 	)
