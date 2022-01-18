@@ -81,4 +81,8 @@
 		border-radius: 8px;
 		cursor: pointer;
 	}
+
+	.navbar-logo {
+		justify-content: space-around;
+	}
 }

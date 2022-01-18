@@ -5,6 +5,7 @@
 	height: 70vh;
 	padding: 100px 0 100px 0;
 	justify-content: space-between;
+	width: 100%;
 }
 
 .about-desc {
@@ -78,10 +79,9 @@
 	}
 
 	.about-desc {
-		width: 90%;
+		width: 85%;
 		margin: 0 auto;
 		padding: 40px 20px 50px 20px;
-		text-align: center;
 	}
 
 	.about-desc > h3 {
@@ -89,12 +89,7 @@
 		text-align: center;
 	}
 
-	.about-img {
-		width: 30%;
-		margin-bottom: 50px;
-	}
-
-	/* .about-img > img {
+	.about-img > img {
 		width: 100%;
-	} */
+	}
 }
