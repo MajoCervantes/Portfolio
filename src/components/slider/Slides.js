@@ -9,6 +9,8 @@ import eCommerce from '../../media/ecommerce.png'
 import Github from '../../media/github.png'
 import ToDo from '../../media/todo.png'
 import Trivia from '../../media/trivia.png'
+import Shopsi from '../../media/shopsi.png'
+import Encamino from '../../media/encamino.png'
 
 const slidesInfo = [
   {
@@ -17,9 +19,14 @@ const slidesInfo = [
     desc: 'Coutries Weather App',
   },
   {
-    src: eCommerce,
-    alt: 'Tienda en línea',
-    desc: 'E Commerce',
+    src: Shopsi,
+    alt: 'Shopsi App',
+    desc: 'Plataforma de venta y distribución de productos',
+  },
+  {
+    src: Encamino,
+    alt: 'Encamino',
+    desc: 'Plataforma de lógistica y transporte',
   },
   {
     src: Github,
@@ -42,7 +49,11 @@ const slides = slidesInfo.map((slide, idx) => (
   <div key={idx} className="slide-container">
     <a
       href={`${
-        slide.src === Trivia
+        slide.src === Shopsi
+          ? 'https://shopsi.com.mx/'
+          : slide.src === Encamino
+          ? 'https://encamino.com/'
+          : slide.src === Trivia
           ? 'https://trivia-two.vercel.app/'
           : slide.src === ToDo
           ? 'https://to-do-list-sand.vercel.app/'
