@@ -21,12 +21,12 @@ const slidesInfo = [
   {
     src: Shopsi,
     alt: 'Shopsi App',
-    desc: 'Plataforma de venta y distribución de productos',
+    desc: 'Product purchase and distribution platform',
   },
   {
     src: Encamino,
     alt: 'Encamino',
-    desc: 'Plataforma de lógistica y transporte',
+    desc: 'Logistics and parcel platform',
   },
   {
     src: Github,
